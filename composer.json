@@ -16,7 +16,6 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
         "thomaswelton/laravel-gravatar": "~1.0"
-
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.6",
@@ -53,17 +52,17 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
-           "post-update-cmd": [
-        "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-        "@php artisan ide-helper:generate",
-        "@php artisan ide-helper:meta",
-        "@php artisan ide-helper:models --nowrite"
-    ],
-    "post-install-cmd": [
-        "@php artisan ide-helper:generate",
-        "@php artisan ide-helper:meta",
-        "@php artisan ide-helper:models --nowrite"
-    ]
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "@php artisan ide-helper:generate",
+            "@php artisan ide-helper:meta",
+            "@php artisan ide-helper:models --nowrite"
+        ],
+        "post-install-cmd": [
+            "@php artisan ide-helper:generate",
+            "@php artisan ide-helper:meta",
+            "@php artisan ide-helper:models --nowrite"
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
